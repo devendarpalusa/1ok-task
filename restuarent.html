@@ -1,0 +1,81 @@
+
+<!-- saved from url=(0050)http://127.0.0.1:5500/task/day%203/restuarent.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+        table ,td,th
+        { border:2px solid rgb(300,100,100);
+        border-collapse:collapse;}
+    </style>
+</head><body><center><h1><b>DURGA RESTAURANT</b></h1>
+</center>
+<img src="./non veg.jfif" width="200,height=200">
+    <h1><u>non veg menu</u></h1><table>
+    <tbody><tr>
+        <th> items</th>
+        <td> plate</td>
+        <td>rate</td></tr>
+    <tr>
+    <th> manchuria</th>
+    <td>full</td>
+    <td>100</td>
+</tr>
+<tr>
+    <th>chicken biryani</th>
+    <td>full</td>
+<td>150</td>
+</tr></tbody></table>
+<h1><u>vegetarian menu</u></h1>
+<img src="./VEG BIRYANI.jfif" width="200,height=200">
+    <table><tbody><tr>
+        <th>item</th>
+        <td>plate</td>
+        <td>rate</td>
+    </tr>
+<tr>
+    <th>jira rice</th>
+    <td> full</td>
+    <td>80</td>
+</tr>
+<tr><th> lemon rice</th>
+<td>full</td>
+<td>40</td></tr></tbody></table>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
